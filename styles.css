@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+}
+body {
+  background-image: url("/b1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.calculator {
+  height: 600px;
+  width: 400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 3px,
+        transparent 3px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px)
+      0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 10px)
+      calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
+      calc(100% - 10px) no-repeat,
+    linear-gradient(82deg, transparent 0%, rgba(222, 139, 28, 0.32) 100%),
+    radial-gradient(
+        at 88% 62%,
+        #e51339 0%,
+        #fc9009 56.967%,
+        #e22265 62.435%,
+        #f604ca 100%
+      )
+      15% 11%/126% 130%;
+  border-radius: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+.upper {
+  flex-grow: 0.15;
+  border: 2cap solid black;
+}
+.middle {
+  flex-grow: 0.68;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lower {
+  display: flex;
+  flex-grow: 0.17;
+}
+.middle .btn {
+  min-height: 17px;
+  min-width: 25%;
+}
+.zero {
+  flex: 0 0 50%;
+}
+.decimal,
+.equate {
+  flex: 1;
+}
+.btn {
+  background: #ea05ff;
+  background-image: -webkit-linear-gradient(top, #ea05ff, #2980b9);
+  background-image: -moz-linear-gradient(top, #ea05ff, #2980b9);
+  background-image: -ms-linear-gradient(top, #ea05ff, #2980b9);
+  background-image: -o-linear-gradient(top, #ea05ff, #2980b9);
+  background-image: linear-gradient(to bottom, #ea05ff, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #ff0088;
+  background-image: -webkit-linear-gradient(top, #ff0088, #3498db);
+  background-image: -moz-linear-gradient(top, #ff0088, #3498db);
+  background-image: -ms-linear-gradient(top, #ff0088, #3498db);
+  background-image: -o-linear-gradient(top, #ff0088, #3498db);
+  background-image: linear-gradient(to bottom, #ff0088, #3498db);
+  text-decoration: none;
+}
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 95px;
+}
+.displayText {
+  font-size: xx-large;
+}
+.two {
+  background: #00f2fa;
+  background-image: -webkit-linear-gradient(top, #00f2fa, #9c64c4);
+  background-image: -moz-linear-gradient(top, #00f2fa, #9c64c4);
+  background-image: -ms-linear-gradient(top, #00f2fa, #9c64c4);
+  background-image: -o-linear-gradient(top, #00f2fa, #9c64c4);
+  background-image: linear-gradient(to bottom, #00f2fa, #9c64c4);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #0022ff;
+  -moz-box-shadow: 0px 1px 3px #0022ff;
+  box-shadow: 0px 1px 3px #0022ff;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.two:hover {
+  background: #1100ff;
+  background-image: -webkit-linear-gradient(top, #1100ff, #154463);
+  background-image: -moz-linear-gradient(top, #1100ff, #154463);
+  background-image: -ms-linear-gradient(top, #1100ff, #154463);
+  background-image: -o-linear-gradient(top, #1100ff, #154463);
+  background-image: linear-gradient(to bottom, #1100ff, #154463);
+  text-decoration: none;
+}
